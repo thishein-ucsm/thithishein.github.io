@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script> -->
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#about"> About  </a></li>
+                    <li><a href="#contact"> Contact  </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                 </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+       
+            <div class="header-text">
+                <h3> Hello, I'm <span>Thi Thi Shein </span></h3>
+                <h2> Research Assistant</h2>
+            
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class= "about-col-1">
+                    <img src="self.jpg"> <br>
+                     <div class="p-links">
+                        
+                            <a href="https://en.wikipedia.org/wiki/Mandalay"><i class="fa fa-fw fa-map-marker" style="font-size:16px; color:#ffffff"></i> Mandalay, Myanmar </a> <br> <br>
+
+                            <a href="mailto:thithishein.ucsm@gmail.com"><i class="fa fa-envelope" style="font-size:16px; color:#ffffff"></i> Email</a> <br> <br>
+                            <a href="https://www.linkedin.com/in/thi-thi-shein-407655131/"><i class="fab fa-fw fa-linkedin" style="font-size:16px; color:#ffffff"></i> LinkedIn</a><br> <br>
+                            <a href="https://scholar.google.com/citations?hl=en&user=P0Ow3bUAAAAJ"><i class="fas fa-fw fa-graduation-cap" style="font-size:16px; color:#ffffff"></i> Google Scholar</a><br><br>
+                            <a href="https://github.com/thishein-ucsm"><i class="fab fa-github" style="font-size:16px; color:#ffffff"></i> Github</a><br> <br>
+                            <a href="https://www.researchgate.net/profile/Thi-Shein"><i class="fab fa-fw fa-researchgate" aria-hidden="true" style="font-size:16px; color:#ffffff"></i> Research Gate</a><br><br>
+                          
+                     </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> As an assistant lecturer, experienced and passionate with over 3 years at Computer University (Mandalay). 
+                        Research assistant with over 5 years of experience in data mining research projects
+                        including staptio-temporal data analysis, pattern discovery, and behaviour tracking from moving objects’ trajectories. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                        <p class="tab-links" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('certificates')"> Certificates</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span> Lecturer ( January, 2021 - May, 2021) </span> <br> Faculty of Information Science,Computer University (Loikaw) , Loikaw, Myanmar</li> 
+                            <li> <span>Research Assistant (August, 2017 - July, 2020 )</span> <br> <a href='https://kmitl.io/en'> King Mongut’s Institute of Technology Ladkrabang, Bangkok, Thailand </a></li>
+                            <li> <span>Research Assistant (July, 2019  - November, 2019  )</span> <br> <a href=https://www.u-tokai.ac.jp/'> Tokai University, Tokyo, Japan </a></li>
+                            <li> <span>Research Assistant (June, 2015  - July, 2017  )</span> <br> <a href='https://www.ucsm.edu.mm/'>  University of Computer Studies, Mandalay, Myanmar </a></li>
+                            <li> <span>Tutor (March, 2013  - May , 2015 )</span> <br> <a href='https://www.ucsm.edu.mm/'>  Faculty of Computing, Computer University (Mandalay), Mandalay, Myanmar </a></li>
+
+
+                        </ul>    
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>D. Eng  in Electrial Engineering </span>  <br> <a href='https://kmitl.io/en'> King Mongut’s Institute of Technology Ladkrabang, Bangkok, Thailand </a><br> (August 2017 - July 2020)</li>
+                            <li><span> M.C.Sc. in Computer Science  </span>  <br> <a href='https://www.ucsm.edu.mm/'> Computer University (Mandalay), Mandalay, Myanmar</a> <br>(December 2009 - January 2012) </li>
+                            <li><span>  B.C.Sc.(Hons) in Computer Science  </span> <br> <a href='https://www.ucsm.edu.mm/'> Computer University (Mandalay), Mandalay, Myanmar</a><br> ( December 2007 - September 2008  ) </li>
+                            <li><span>B.C.Sc. in Computer Science   </span><br><a href='https://www.ucsm.edu.mm/'> Computer University (Mandalay), Mandalay, Myanmar</a> <br> (January 2005 - September 2007)   </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span> Technical Skills</span> <br> C++, Java, JavaScript, Python, SQL, ArcGIS</li>
+                            <li><span> Soft Skills</span> <br> Critical Thinking, Creative Thinking, Problem Solving, Active Learning</li>
+                            <li><span> Hard Skills</span> <br> Data Vistualization, Data Analysis, Data Mining, Machine Learning, Deep Learning</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span> Diploma in Java Programming Course </span> <br> India-Myanmar Centre for Enhancement of IT Skills  (IMCEITS)<br> (November, 2013 - May, 2014) </li>
+                            <li><span> Knowledge Co-Creation Program </span> <br> Computer and Information Engineering ) under the Japan International Cooperation Agency (JACA)<br>(July, 2019 -  November, 2019) </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- ------------------- Contact ---------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> thithishein.ucsm@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+959-967666620</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""> <i class="fab fa-twitter-square"></i></a>
+                    <a href=""> <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/thi-thi-shein-407655131/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href=""  download class="btn btn2" role="button">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0-Pp4NIl9nj3dCHdzEveDODoKuhkfc-YxxJ5UpzsMnuGLV3Cd2vfuENNM5QkXu_JhLg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   
+</body>
+</html>
